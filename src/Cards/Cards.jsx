@@ -5,7 +5,7 @@ export default function Boxes ({
 
     id,
     title,
-   // description,
+    description,
     is_completed,
     handleDelete,
     handleUpdate,

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import NewBox from './Pieces/form';
-import Boxes from './Pieces/boxes';
+import NewBox from './FilledOut/form';
+import Boxes from './Cards/Cards';
 
 function Foundation() {
  
