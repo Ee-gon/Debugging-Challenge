@@ -1,0 +1,47 @@
+.box {
+  padding: 10px;
+  border: 1px solid #ffffff;
+}
+
+.fillOutForm{
+    display: flex;
+    /* text-align: center;    dont need?  */ 
+    flex-direction: column;
+    max-width: 500px ;
+    margin-left: 60px;
+    gap: 12px;
+}
+
+ .fillOutForm input{
+  font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.titleBox {
+    margin-top: 22px;
+    border: solid #ffffff;
+    border-radius: 10px;
+    border:solid #a1d4ae;
+    background-color: rgba(46, 139, 86, 0.074);
+    
+}
+
+.descriptionBox {
+    border: solid #ffffff;
+    border-radius: 10px;
+    height: 100px;
+    border:solid #a1d4ae;
+    background-color: rgba(46, 139, 86, 0.074);
+}
+ .addTaskBox{
+    margin-bottom: 20px;
+    border: solid #a1d4ae;
+    border-radius: 10px;
+    background-color: rgb(86, 160, 100);
+}
+
+.addTaskBox:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(1, 149, 68, 0.782) 0px 5px 5px 0px, rgba(0, 255, 26, 0.433) 0px 2px 16px 0px;
+}

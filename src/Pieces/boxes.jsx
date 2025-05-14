@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-//import ss from "./SSboxes.css";
+import ss from "./SSboxes.css";
 
 export default function Boxes ({
 
@@ -76,7 +76,7 @@ return (
         </button>
     </div>
 
-    <div className = {isCompleted ? ss.boxCompleted : "box"}>
+    <div className = {is_Completed ? ss.boxCompleted : "box"}>
         <div className = {"title"}>
             <input
                 type = "type"            

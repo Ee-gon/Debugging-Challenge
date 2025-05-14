@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const port = process.env.PORT;
 app.use(cors({ origin: 'http://localhost:5173' }));
 
-console.log(process.env.SERVERHOST);
+
 
 
 //setting up necessary information for the MySQL server connection
