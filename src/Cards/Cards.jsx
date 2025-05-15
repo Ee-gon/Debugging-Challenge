@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ss from "./SSboxes.css";
 
-export default function Boxes ({
+export default function Cards ({
 
     id,
     title,

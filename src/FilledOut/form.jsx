@@ -1,7 +1,7 @@
 import React from "react";
-//import ss from "./SSboxes.css";
+import ss from "./SSform.module.css";
 
-export default function NewBox({ 
+export default function FilledOutForm({ 
         title, description, handleCreate }) {
 
             function handleAddTask(params) {
@@ -12,11 +12,11 @@ export default function NewBox({
             }
             
             return (
-                <div className = { "formBox" }>
-                    <form action = {handleAddTask} className = { "formBox" }>
-                        <input type = ":text" placeholder = "Title" name = "title" value = {title} />
-                        <input type = ":text" placeholder = "Description" name = "description" value = {description} />
-                        <input type = "submit" value = "Add Task" className = {"addTask"}/>
+                <div className = { "ss.formBox" }>
+                    <form action = {handleAddTask} className = { "ss.formFilled" }>
+                        <input type = ":text" placeholder = "Title" name = "title" value = {title} className="ss.titleForm" />
+                        <input type = ":text" placeholder = "Description" name = "description" value = {description} className="ss.descriptionForm" />
+                        <input type = "submit" value = "Add Task" className = {"ss.addTaskForm"}/>
                     </form>
                 </div> 
             );

@@ -1,0 +1,67 @@
+.cardBox{
+    display: flex;
+    /* text-align: center; */
+    flex-direction: column;
+    max-width: 500px ;
+    margin-left: 60px;
+    gap: 12px;
+}
+
+.controlBtns{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 5px;
+}
+.listWrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    width: 85%;
+}
+
+.contentWrapper{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    background-color: #60331b83;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.listTitle{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #09ac3c;
+}
+
+.listDescription{
+    text-align: left;
+    font-size: 15px;
+    color: #b4ceb1;
+}
+
+.checkBox{
+    text-align: right;
+    margin-left: 20px;
+    padding: 0px;
+    align-self: center;
+}
+
+.completed {
+    
+    display: flex;
+    text-decoration: line-through;
+    margin-bottom: 50px;
+    background-color: rgb(156, 156, 156);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+.checkBox input[type="checkbox"]{
+    transform: scale(2.5);
+}
+
