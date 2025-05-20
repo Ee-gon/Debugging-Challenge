@@ -10,12 +10,13 @@ export default function Cards ({
     handleDelete,
     handleUpdate,
 }) {
+    
     const [titleText, setTitleText] = useState(title);
     const [description, setDescription] = useState(description); 
 
     const [is_Completed, setIsCompleted] = useState(is_completed === 0 ? false : true);
 
-    
+
     const [editClicked, setEditClicked] = useState(false);
     const [isDisabled, setIsDisabled] = useState(true);
 
