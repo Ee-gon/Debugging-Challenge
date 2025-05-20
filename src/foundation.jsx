@@ -153,12 +153,12 @@ useEffect(() => {
 
             <div className = "midBox">
                     
-            <NewBox handleCreate={createTask} />
+            <Cards handleCreate={createTask} />
             {tasks.length === 0 ? (
         <p className="serverInfo">Sorry you got some Server related issues, go see a counselor</p>
          ) : (
         tasks.map((task) => (
-          <Boxes
+          <FilledOutForm
             key={task.id}
             {...task}
             handleDelete={deleteTask}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ss from "./SSboxes.css";
+import ss from "./SScards.module.css";
 
 export default function Cards ({
 
@@ -98,8 +98,8 @@ return (
             <input
                type = "checkbox"
                name = "check"
-               checked = {isCompleted}
-               value = {isCompleted}
+               checked = {is_Completed}
+               value = {is_Completed}
               // onChange = {}            
             />
         </div>
