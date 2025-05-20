@@ -20,7 +20,7 @@
     width: 85%;
 }
 
-.contentWrapper{
+.cardWrapper{
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;

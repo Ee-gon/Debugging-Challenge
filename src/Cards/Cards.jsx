@@ -11,7 +11,7 @@ export default function Cards ({
     handleUpdate,
 }) {
     const [titleText, setTitleText] = useState(title);
-   // const [description, setDescription] = useState(description); 
+    const [description, setDescription] = useState(description); 
 
     const [is_Completed, setIsCompleted] = useState(is_completed === 0 ? false : true);
 
@@ -49,8 +49,8 @@ function onCheckClick() {
 
 return (
 
-    <div className = { "box" } >
-        <div className = { "boxButtons" }>    
+    <div className = { "addCards" } >
+        <div className = { "addCardsButtons" }>    
         
 
         {/* 
@@ -76,12 +76,12 @@ return (
         </button>
     </div>
 
-    <div className = {is_Completed ? ss.boxCompleted : "box"}>
-        <div className = {"title"}>
+    <div className = { is_Completed ? ss.boxCompleted : ss.cardWrapper }>
+        <div className = { ss.listTitle } >
             <input
                 type = "type"            
                 name = "title"
-                value = {titleText}
+                value = { titleText }
                 onChange = {(e) => setTitleText(e.target.value)}
                 disbaled = {isDisabled}
                 />
