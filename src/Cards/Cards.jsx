@@ -15,7 +15,7 @@ export default function Cards ({
 
     const [is_Completed, setIsCompleted] = useState(is_completed === 0 ? false : true);
 
-
+    
     const [editClicked, setEditClicked] = useState(false);
     const [isDisabled, setIsDisabled] = useState(true);
 
