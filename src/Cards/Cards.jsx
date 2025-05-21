@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ss from "./SScards.module.css";
 
-export default function Cards ({
+export default function Cards({
 
     id,
     title,
@@ -12,9 +12,9 @@ export default function Cards ({
 }) {
     
     const [titleText, setTitleText] = useState(title);
-    const [description, setDescription] = useState(description); 
+    const [desc, setDesc] = useState(description); 
 
-    const [is_Completed, setIsCompleted] = useState(is_completed === 0 ? false : true);
+    const [isCompleted, setIsCompleted] = useState(is_completed === 0 ? false : true);
 
 
     const [editClicked, setEditClicked] = useState(false);
@@ -27,31 +27,33 @@ export default function Cards ({
             if(editClicked) {
                 handleUpdate(id, {
                     title: titleText,
-                    description: description,
-                    is_Completed: is_completed,
+                    description: desc,
+                    is_completed: isCompleted,
                 });
 
 
-                console.log(titleText, description, isCompleted);
+                console.log(titleText, desc, isCompleted);
                 setEditClicked(false);
                 setIsDisabled(true);
             
                 }
             }
+        //changes being made
+
         
 function onCheckClick() {
-    handleUpdate( isDisabled, {
+    handleUpdate( id, {
         title: titleText,
-        description: description,
-        is_Completed: is_completed,
+        description: desc,
+        is_completed: isCompleted,
     });
-    setIsCompleted(!is_completed);
+    setIsCompleted(!isCompleted);
 }
 
 return (
 
-    <div className = { "addCards" } >
-        <div className = { "addCardsButtons" }>    
+    <div className = { ss.addCards } >
+        <div className = { ss.addCardsButtons }>    
         
 
         {/* 
@@ -62,12 +64,12 @@ return (
 
         */}
 
-        <button onClick = {() => {}}> 
+        <button onClick = {() => handleDelete(id) }> 
             <i className ="material-symbols-outlined">
             delete  </i>
         </button>
 
-        <button onClick = {() => {}} >
+        <button onClick = {handleChange} >
             {editClicked ? (
               <i
                 className = "material-symbols-outlined">done</i>
@@ -77,31 +79,32 @@ return (
         </button>
     </div>
 
-    <div className = { is_Completed ? ss.boxCompleted : ss.cardWrapper }>
+    <div className = { isCompleted ? ss.boxCompleted : ss.cardWrapper }>
         <div className = { ss.listTitle } >
             <input
-                type = "type"            
+                type = "text"            
                 name = "title"
                 value = { titleText }
                 onChange = {(e) => setTitleText(e.target.value)}
-                disbaled = {isDisabled}
+                disabled = {isDisabled} 
                 />
                 <textarea
+                    className = { ss.listDesc }
                     type = "text"
-                    name = "description"
-                    value = {description}
+                    name = "desc"
+                    value = {desc}
                     maxLength = {200}
-                    onChange = {(e) => setDescription(e.target.value)}
+                    onChange = {(e) => setDesc(e.target.value)}
                     disabled = {isDisabled}
                     />
         </div>
-        <div className = {"checkBox"}>
+        <div className = {ss.checkBox}>
             <input
                type = "checkbox"
                name = "check"
-               checked = {is_Completed}
-               value = {is_Completed}
-              // onChange = {}            
+               checked = {isCompleted}
+               value = {isCompleted}
+               onChange = {onCheckClick}            
             />
         </div>
     </div>

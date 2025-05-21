@@ -11,11 +11,12 @@ export default function FilledOutForm({
                 handleCreate({ title, description, is_completed: false });
             }
             
+
             return (
                 <div className = { ss.formBox }>
                     <form action = {handleAddTask} className = { ss.formFilled }>
                         <input type = ":text" placeholder = "Title" name = "title" value = {title} className= { ss.titleForm } />
-                        <input type = ":text" placeholder = "Description" name = "description" value = {description} className= { ss.descriptionForm } />
+                        <input type = ":text" placeholder = "DESCRIPTION" name = "description" value = {description} className= { ss.descriptionForm } />
                         <input type = "submit" value = "Add Task" className = { ss.addTaskForm }/>
                     </form>
                 </div> 
