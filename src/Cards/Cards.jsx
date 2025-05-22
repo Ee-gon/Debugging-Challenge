@@ -93,7 +93,7 @@ return (
                     type = "text"
                     name = "desc"
                     value = {desc}
-                    maxLength = {200}
+                    maxLength = {150}
                     onChange = {(e) => setDesc(e.target.value)}
                     disabled = {isDisabled}
                     />
