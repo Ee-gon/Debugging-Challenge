@@ -1,14 +1,15 @@
 .formBox {
   padding: 10px;
-  border: 1px solid #ffffff;
+  border: 5px solid #ffffff;
+  
+
 }
 
 .formFilled{
     display: flex;
-    /* text-align: center;    dont need?  */ 
+    text-align: center;
     flex-direction: column;
-    max-width: 500px ;
-    margin-left: 60px;
+    max-width: auto ;
     gap: 12px;
 }
 
