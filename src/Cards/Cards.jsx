@@ -53,33 +53,35 @@ function onCheckClick() {
 return (
 
     <div className = { ss.addCards } >
-        <div className = { ss.addCardsButtons }>    
+        <div className = { isCompleted ? ss.boxCompleted : ss.cardWrapper }>
+            <div className = { ss.addCardsButtons }>    
         
 
-        {/* 
+            {/* 
         
-        handles the different edit options at the top of each box (task)      
+            handles the different edit options at the top of each box (task)      
 
-        VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+            VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 
-        */}
+            */}
 
-        <button onClick = {() => handleDelete(id) }> 
-            <i className ="material-symbols-outlined">
+            <button onClick = {() => handleDelete(id) }> 
+                <i className ="material-symbols-outlined">
             delete  </i>
-        </button>
+              </button>
 
-        <button onClick = {handleChange} >
+            <button onClick = {handleChange} >
             {editClicked ? (
               <i
                 className = "material-symbols-outlined">done</i>
             ) : (
                 <i className = "material-symbols-outlined">edit</i>
             )}
-        </button>
-    </div>
+            </button>
 
-    <div className = { isCompleted ? ss.boxCompleted : ss.cardWrapper }>
+
+        </div>
+    
         <div className = { ss.listTitle } >
             <input
                 type = "text"            
@@ -106,8 +108,17 @@ return (
                value = {isCompleted}
                onChange = {onCheckClick}            
             />
+
+
+
+
+
+
+
+
+            
+             </div>
         </div>
     </div>
-</div>
 );
 }
