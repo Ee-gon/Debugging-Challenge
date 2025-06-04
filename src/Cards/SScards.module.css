@@ -55,15 +55,22 @@
     align-self: center;
 }
 
-.completed {
+.boxCompleted {
     
     display: flex;
-    text-decoration: line-through;
     margin-bottom: 50px;
     background-color: rgb(156, 156, 156);
     border-radius: 10px;
     padding: 10px;
 }
+
+.boxCompleted input[type="text"],
+.boxCompleted textarea {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
 
 
 

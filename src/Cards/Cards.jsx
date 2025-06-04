@@ -105,7 +105,7 @@ return (
                type = "checkbox"
                name = "check"
                checked = {isCompleted}
-               value = {isCompleted}
+               value = {isCompleted }
                onChange = {onCheckClick}            
             />
 
