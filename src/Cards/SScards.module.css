@@ -10,7 +10,7 @@
 .addCardsButtons{
     display: flex;
     
-    flex-direction: row-reverse;
+    flex-direction: row;
     margin-bottom: 5px;
 }
 
