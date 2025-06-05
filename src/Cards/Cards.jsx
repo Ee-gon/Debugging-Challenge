@@ -82,8 +82,9 @@ return (
 
         </div>
     
-        <div className = { ss.listTitle } >
-            <input
+        <div className = { ss.listWrapper } >
+            <input 
+                className= { ss.listTitle }
                 type = "text"            
                 name = "title"
                 value = { titleText }
