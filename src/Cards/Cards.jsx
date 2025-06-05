@@ -65,12 +65,12 @@ return (
 
             */}
 
-            <button onClick = {() => handleDelete(id) }> 
+            <button onClick = {() => handleDelete(id) } className= { ss.deleteButton }> 
                 <i className ="material-symbols-outlined">
             delete  </i>
               </button>
 
-            <button onClick = {handleChange} >
+            <button onClick = {handleChange} className={ ss.editButton } >
             {editClicked ? (
               <i
                 className = "material-symbols-outlined">done</i>

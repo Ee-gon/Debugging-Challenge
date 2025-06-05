@@ -9,11 +9,16 @@
 
 .addCardsButtons{
     display: flex;
-    
-    flex-direction: row;
-    margin-bottom: 5px;
+    flex-direction: column-reverse;
+    margin-bottom: 7px;
 }
 
+.editButton{
+    height: 80px;
+    margin-bottom: 7px;
+    width: 70px;
+    
+}
 
 .cardWrapper{
     display: flex;
@@ -28,6 +33,7 @@
     text-align: left;
     font-size: 20px;
     font-weight: bold;
+    margin-left: 10px;
 }
 
 .listTitle{
