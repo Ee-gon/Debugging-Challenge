@@ -9,7 +9,7 @@ export default function Cards({
     is_completed,
     handleDelete,
     handleUpdate,
-    }) {
+}) {
     
     const [titleText, setTitleText] = useState(title);
     const [desc, setDesc] = useState(description); 
@@ -41,43 +41,44 @@ export default function Cards({
         //changes being made
 
         
-    function onCheckClick() {
-    handleUpdate( id, {
-        title: titleText,
-        description: desc,
-        is_completed: isCompleted,
-    });
-    setIsCompleted(!isCompleted);
-    }
+        function onCheckClick() {
+            handleUpdate( id, {
+            title: titleText,
+            description: desc,
+            is_completed: isCompleted,
+            });
+            setIsCompleted(!isCompleted);
+            }
 
-    return (
+            return (
 
-    <div className = { ss.addCards } >
-        <div className = { isCompleted ? ss.boxCompleted : ss.cardWrapper }>
-            <div className = { ss.addCardsButtons }>    
+        <div className = { ss.addCards } >
+            <div className = { isCompleted ? ss.boxCompleted : ss.cardWrapper }>
+                <div className = { ss.addCardsButtons }>    
         
 
-            {/* 
+                        {/* 
         
-            handles the different edit options at the top of each box (task)      
+                        handles the different edit options at the top of each box (task)      
 
-            VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+                        VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 
-            */}
+                        */}
 
-            <button onClick = {() => handleDelete(id) } className= { ss.deleteButton }> 
-                <i className ="material-symbols-outlined">
-            delete  </i>
-              </button>
+                        <button onClick = {() => handleDelete(id) } 
+                        className= { ss.        deleteButton }> 
+                        <i className ="material-symbols-outlined">
+                        delete  </i>
+                        </button>
 
-            <button onClick = {handleChange} className={ ss.editButton } >
-            {editClicked ? (
-              <i
-                className = "material-symbols-outlined">done</i>
-            ) : (
-                <i className = "material-symbols-outlined">edit</i>
-            )}
-            </button>
+                <button onClick = {handleChange} className={ ss.editButton } >
+                {editClicked ? (
+                    <i
+                    className = "material-symbols-outlined">done</i>
+                    ) : (
+                    <i className = "material-symbols-outlined">edit</i>
+                    )   }
+                </button>
 
 
         </div>

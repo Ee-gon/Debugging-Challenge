@@ -156,23 +156,22 @@ useEffect(() => {
 
             <FilledOutForm handleCreate={createTask} />
             {tasks.length === 0 ? (
-        <p className="serverInfo">Sorry you got some Server related issues, go see a counselor</p>
-         ) : (
-        tasks.map((task) => (
-          <Cards
+            <p className="serverInfo">Sorry you got some Server related issues, go see a counselor</p>
+            ) : (
+
+            <div className={ss.addedCardsWrap}>
+            {tasks.map((task) => (
+            <Cards
             key={task.id}
             {...task}
             handleUpdate={updateTask}
             handleDelete={deleteTask}
-            
           />
-        ))
-      )}
-      
+            ))}
             </div>
- </>
-        
-    )
-}
+            )}
+           
+          </div>
 
+</> 
 export default Foundation;
