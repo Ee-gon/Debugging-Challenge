@@ -9,7 +9,7 @@ export default function Cards({
     is_completed,
     handleDelete,
     handleUpdate,
-}) {
+    }) {
     
     const [titleText, setTitleText] = useState(title);
     const [desc, setDesc] = useState(description); 
@@ -41,16 +41,16 @@ export default function Cards({
         //changes being made
 
         
-function onCheckClick() {
+    function onCheckClick() {
     handleUpdate( id, {
         title: titleText,
         description: desc,
         is_completed: isCompleted,
     });
     setIsCompleted(!isCompleted);
-}
+    }
 
-return (
+    return (
 
     <div className = { ss.addCards } >
         <div className = { isCompleted ? ss.boxCompleted : ss.cardWrapper }>
@@ -103,12 +103,13 @@ return (
         </div>
         <div className = {ss.checkBox}>
             <input
+            
                type = "checkbox"
                name = "check"
                checked = {isCompleted}
                value = {isCompleted }
                onChange = {onCheckClick}            
-            />
+                                            />
 
 
 
@@ -121,5 +122,5 @@ return (
              </div>
         </div>
     </div>
-);
+    );
 }
