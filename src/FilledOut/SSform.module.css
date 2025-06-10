@@ -1,8 +1,5 @@
 .formBox {
-  padding: 10px;
-  border: 5px solid #ffffff;
   
-
 }
 
 .formFilled{
@@ -42,7 +39,7 @@
     background-color: rgb(86, 160, 100);
 }
 
-.addTaskBox:hover {
+.addTaskButton:hover {
     transform: scale(1.02);
     box-shadow: rgba(1, 149, 68, 0.782) 0px 5px 5px 0px, rgba(0, 255, 26, 0.433) 0px 2px 16px 0px;
 }
