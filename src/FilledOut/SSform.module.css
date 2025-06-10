@@ -37,6 +37,7 @@
     border: solid #a1d4ae;
     border-radius: 10px;
     background-color: rgb(86, 160, 100);
+    cursor: pointer;
 }
 
 .addTaskButton:hover {

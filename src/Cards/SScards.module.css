@@ -13,6 +13,7 @@
     flex-direction: column-reverse;
     margin-bottom: 7px;
     height: 100%;
+    
 }
 
 .editButton{
@@ -21,7 +22,16 @@
     width: 70px;
     min-height: 86px;
     height: 100%;
-    
+    cursor: pointer;
+}
+
+.deleteButton{
+    cursor: pointer;
+
+}
+
+.checkBox{
+    cursor: pointer;
 }
 
 .cardWrapper{
@@ -61,11 +71,12 @@
     min-height: 80px;
 }
 
-.checkBox{
+.checkBoxArea{
     text-align: right;
     margin-left: 6px;
     padding: 0px;
     align-self: center;
+    
 }
 
 .boxCompleted {
@@ -87,7 +98,7 @@
 
 
 
-.checkBox input[type="checkbox"]{
+.checkBoxArea input[type="checkbox"]{
     transform: scale(2.5);
 }
 

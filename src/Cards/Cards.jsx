@@ -66,7 +66,7 @@ export default function Cards({
                         */}
 
                         <button onClick = {() => handleDelete(id) } 
-                        className= { ss.        deleteButton }> 
+                        className= { ss.deleteButton }> 
                         <i className ="material-symbols-outlined">
                         delete  </i>
                         </button>
@@ -102,9 +102,9 @@ export default function Cards({
                     disabled = {isDisabled}
                     />
         </div>
-        <div className = {ss.checkBox}>
+        <div className = {ss.checkBoxArea}>
             <input
-            
+               className={ss.checkBox} 
                type = "checkbox"
                name = "check"
                checked = {isCompleted}
